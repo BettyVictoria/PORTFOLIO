@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangeline Bettina Victoria - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F8EDEB;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: #FFD3B6;
+            padding: 25px;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #333;
+            background: #FFAAA5;
+            padding: 12px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a:hover {
+            background: #FF8C94;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 40px 0;
+        }
+        .section {
+            display: none;
+            width: 80%;
+            max-width: 900px;
+            padding: 40px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 400;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            background: #FAF3DD;
+            animation: fadeIn 0.5s;
+        }
+        .active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        img {
+            pointer-events: none;
+            -webkit-user-drag: none;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .certifications img, .creative img {
+            width: 280px;
+            height: 200px;
+            margin: 12px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evangeline Bettina Victoria - Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F8E8EE;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+            user-select: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background: #222;
+            color: #fff;
+        }
+        header {
+            background: #FFDDCC;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #333;
+            background: #FFC7C7;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a:hover {
+            background: #FFB6B9;
+        }
+        .toggle-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #FFB6B9;
+            color: #333;
+            font-size: 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .toggle-btn:hover {
+            background: #FF9AA2;
+        }
+        .container {
+            padding: 30px 10px;
+        }
+        .section {
+            display: none;
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: #FFF;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .active {
+            display: block;
+        }
+        .progress-bar {
+            width: 100%;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress {
+            height: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 20px;
+            background: #FFB6B9;
+            width: 0;
+        }
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            pointer-events: none;
+            -webkit-user-drag: none;
+        }
+    </style>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            document.getElementById(sectionId).classList.add('active');
+        }
+        function animateSkills() {
+            document.querySelectorAll(".progress").forEach(bar => {
+                let width = bar.getAttribute("data-skill");
+                bar.style.width = width;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", animateSkills);
+    </script>
+</head>
+<body>
+    <header>Evangeline Bettina Victoria</header>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Light/Dark Mode</button>
+    <nav>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('skills')">Skills</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('creative')">Creative</a>
+        <a href="#" onclick="showSection('certifications')">Certifications</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="section active">
+            <h2>About Me</h2>
+            <img src="my pic.jpg" alt="Profile Picture" class="profile-pic">
+            <p>I am a passionate Computer Science Engineering student with a deep interest in both technology and creative expression.</p>
+        </div>
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="progress-bar"><div class="progress" data-skill="90%">C</div></div>
+            <div class="progress-bar"><div class="progress" data-skill="85%">Python</div></div>
+            <div class="progress-bar"><div class="progress" data-skill="80%">Java</div></div>
+            <div class="progress-bar"><div class="progress" data-skill="70%">MongoDB</div></div>
+            <div class="progress-bar"><div class="progress" data-skill="75%">MySQL</div></div>
+        </div>
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <p><b>Hand Gesture Recognition:</b> Converts sign language to text/voice with an SOS emergency message.</p>
+            <p><b>Erebus Erythroderma:</b> AI-driven system detecting cattle and buffalo skin diseases using image processing.</p>
+            <p><b>Safe Haven:</b> A disaster safety mobile app offering emergency measures, helplines, and real-time guidance.</p>
+        </div>
+        <div id="creative" class="section">
+            <h2>Creative Works</h2>
+            <p>Painting, Pencil Sketch, Pen Sketch, Oil Pastel.</p>
+            <img src="art1.jpg" alt="Drawing 1">
+            <img src="art2.jpg" alt="Drawing 2">
+            <img src="art3.jpg" alt="Drawing 3">
+            <img src="art4.jpg" alt="Drawing 4">
+            <img src="art5.jpg" alt="Drawing 5">
+        </div>
+        <div id="certifications" class="section">
+            <h2>Certifications</h2>
+            <img src="pic1.jpeg" alt="Certificate 1">
+            <img src="pic2.jpeg" alt="Certificate 2">
+            <img src="pic3.jpeg" alt="Certificate 3">
+            <img src="pic4.jpeg" alt="Certificate 4">
+            <img src="pic5.jpeg" alt="Certificate 5">
+            <img src="pic6.jpeg" alt="Certificate 6">
+            <img src="pic7.jpeg" alt="Certificate 7">
+            <img src="pic8.jpeg" alt="Certificate 8">
+            <img src="pic9.jpeg" alt="Certificate 9">
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: evangelinebettinavictoria.27csa@licet.ac.in</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/evangeline-bettina-victoria-h-8a5669295" target="_blank">Profile</a></p>
+            <p>GitHub: <a href="https://github.com/BettyVictoria" target="_blank">BettyVictoria</a></p>
+        </div>
+    </div>
+</body>
+</html>
